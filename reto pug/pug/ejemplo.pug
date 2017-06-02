@@ -1,0 +1,43 @@
+table
+	tr
+		td x
+		td x
+		td x
+	tr
+		td x
+		td x
+		td x
+	tr
+		td x
+		td x
+		td x
+
+|
+|
+|
+ul
+	- for(var i = 1 ; i <= 10 ; i++) 
+		li Item #{i}
+
+|
+|
+|
+//imprime los items pares del 1 al 100
+ul
+	- for(var i = 1 ; i <= 100 ; i++) 
+		if i%2 == 0
+			li Item #{i} 
+
+|
+|
+|
+//imprime los items multiplos de 5 del 1 al 100
+ul
+	- for(var i = 1 ; i <= 100 ; i++) 
+		if i%5 == 0
+			li.multiplo5: strong Item #{i}
+		else
+			li Item #{i}
+
+
+

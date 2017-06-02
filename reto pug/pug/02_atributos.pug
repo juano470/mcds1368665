@@ -1,0 +1,40 @@
+doctype
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		title Atributos de Etiqueta
+	body
+		h1 Atributos de Etiqueta
+		hr
+		//- atributos en linea 
+		a(class="button", href="https://www.google.com", target="_blank") Google
+		|&nbsp;|&nbsp;
+		//- atributos en bloque
+		a(
+			class="button"
+			href="https://www.google.com"
+			target="_blank") Ir a Google
+		br
+		br
+		hr
+		h1 Atributos Booleanos
+		//- atributos Booleanos
+		label
+			input(type="radio" name="color" checked=false) 
+			| Amarillo
+		label
+			input(type="radio" name="color" checked=true) 
+			| Azul
+		label
+			input(type="radio" name="color" checked=false) 
+			| Rojo
+		br
+		br
+		input(type="checkbox" checked) 
+		br
+		br
+		input(type="checkbox" checked=true) 
+		br
+		br
+		input(type="checkbox" checked=false) 
+		

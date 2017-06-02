@@ -1,0 +1,18 @@
+doctype
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		title iteraciones
+	body
+		h1 iteraciones
+		hr
+		select
+			option Seleccione Lenguaje de Programacion
+			each val in ['java','c#','php','ruby','python']
+				option=val
+		// while
+		ul
+			- var i = 1
+			while i <= 10
+				li='Option'+i++
+		
