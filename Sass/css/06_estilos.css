@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Mogra");
+:root {
+  background: -webkit-linear-gradient(top, #1ECD32, #cc94C7);
+  height: 100vh; }
+
+button {
+  border: none;
+  -webkit-box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.8), 4px 4px 12px rgba(0, 0, 0, 0.8);
+  box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.8), 4px 4px 12px rgba(0, 0, 0, 0.8);
+  background: -webkit-linear-gradient(left, #6aa63f, #a42d64);
+  color: #fff;
+  font-size: 2em;
+  font-family: "Mogra";
+  display: block;
+  margin: 80px auto;
+  padding: 40px;
+  width: 400px; }
+  button:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #6aa63f, #a42d64); }

@@ -1,0 +1,16 @@
+body {
+  font: 16px arial; }
+
+article {
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px; }
+
+.error, .seriouserror {
+  border: 1px solid #f00;
+  background-color: #fdd; }
+  .error h4, .seriouserror h4 {
+    color: #800; }
+
+.seriouserror {
+  border: 4px solid #f00; }
