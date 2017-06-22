@@ -11,14 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-    return "saludos laravel";
-});
+Route::get('/', 'UserController@index'); 
+
+Route::resource('user', 'UserController'); 
 
 
-route::get('saludo',function(){
-	    return "esto es un saludos laravel";
+//route::get('/',function(){
+//	    return "esto es un saludos laravel";
 
-});
+//});
 
