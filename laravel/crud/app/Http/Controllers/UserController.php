@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-
+use App\Http\Requests\UserRequest;
 class UserController extends Controller
 {
     /**
@@ -26,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.create');
     }
 
     /**
@@ -35,9 +35,19 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
-        //
+        dd($request);
+
+       /* 
+        $usr = new User;
+        $usr->name = $request->get(name);
+        $usr->email = $request->get(email);
+        $usr->password = bcrypt($request->get(password));
+        $usr->role = $request->get(role);
+        $usr->photo = $request->get(photo);
+        $usr->save(); 
+        */  
     }
 
     /**
